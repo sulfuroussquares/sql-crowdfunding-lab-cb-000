@@ -15,7 +15,7 @@ ORDER BY title"
 end
 
 def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_name
-"SELECT users.name, pledges.amount
+"SELECT users.name, , users.age, pledges.amount
 FROM users
 JOIN pledges on users.id = pledges.user_id
 GROUP BY users.name
